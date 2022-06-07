@@ -2,3 +2,9 @@ product:
   property: Product Profile Dev
 server:
   port: 8082
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: bootcamp_19
