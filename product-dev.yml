@@ -8,3 +8,5 @@ spring:
       host: localhost
       port: 27017
       database: bootcamp_19
+logging:
+  config: classpath:logback.xml
