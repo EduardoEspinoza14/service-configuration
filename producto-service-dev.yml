@@ -1,0 +1,4 @@
+product:
+  property: Product Profile Dev
+server:
+  port: 8081
