@@ -1,5 +1,17 @@
 customer:
   property: Movement Profile Dev
+api:
+  customer:
+    baseUri: http://localhost:8083/customer
+    personUri: http://localhost:8083/person
+    companyUri: http://localhost:8083/company
+  product:
+    baseUri: http://localhost:8082/product
+    savingsAccountUri: http://localhost:8082/savings-account
+    checkingAccountUri: http://localhost:8082/checking-account
+    fixedTermUri: http://localhost:8082/fixed-term
+    cardUri: http://localhost:8082/card
+    loanUri: http://localhost:8082/loan
 server:
   port: 8084
 spring:
