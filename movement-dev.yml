@@ -5,6 +5,9 @@ api:
     baseUri: http://localhost:8083/customer
     personUri: http://localhost:8083/person
     companyUri: http://localhost:8083/company
+    employeeUri: http://localhost:8083/employee
+    signerUri: http://localhost:8083/signer
+    holderUri: http://localhost:8083/holder
   product:
     baseUri: http://localhost:8082/product
     savingsAccountUri: http://localhost:8082/savings-account
