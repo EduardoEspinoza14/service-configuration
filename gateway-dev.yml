@@ -19,7 +19,7 @@ spring:
           enabled: true
       routes:
         - id: customer
-          uri: lb:/CUSTOMER
+          uri: "lb://CUSTOMER"
           predicates:
             - Path=/customer/**
             - Path=/employee/**
