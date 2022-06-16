@@ -17,6 +17,10 @@ api:
     loanUri: http://localhost:8082/loan
 server:
   port: 8084
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8082/eureka/
 spring:
   data:
     mongodb:
