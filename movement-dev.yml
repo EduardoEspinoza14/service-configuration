@@ -2,12 +2,12 @@ customer:
   property: Movement Profile Dev
 api:
   customer:
-    baseUri: lb://CUSTOMER/customer
-    personUri: lb://CUSTOMER/person
-    companyUri: lb://CUSTOMER/company
-    employeeUri: lb://CUSTOMER/employee
-    signerUri: lb://CUSTOMER/signer
-    holderUri: lb://CUSTOMER/holder
+    baseUri: http://customer/customer
+    personUri: http://localhost:8083/person
+    companyUri: http://localhost:8083/company
+    employeeUri: http://localhost:8083/employee
+    signerUri: http://localhost:8083/signer
+    holderUri: http://localhost:8083/holder
   product:
     baseUri: http://localhost:8083/product
     savingsAccountUri: http://localhost:8083/savings-account
