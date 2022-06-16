@@ -26,6 +26,6 @@ spring:
         - id: customer
           uri: "lb://CUSTOMER"
           predicates:
-            - Path=/customer/**
+            - Path=/customer/**,/employee/**
 logging:
   config: classpath:logback.xml
