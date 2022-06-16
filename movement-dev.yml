@@ -16,11 +16,13 @@ api:
     cardUri: http://localhost:8082/card
     loanUri: http://localhost:8082/loan
 server:
-  port: 8084
+  port: 0
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8082/eureka/
+  instance:
+    instanceId: ${random.uuid}
 spring:
   data:
     mongodb:
