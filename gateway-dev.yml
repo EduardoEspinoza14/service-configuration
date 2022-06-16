@@ -16,15 +16,15 @@ spring:
           enabled: true
       routes:
         - id: customer
-          uri: "lb://CUSTOMER"
+          uri: lb://CUSTOMER
           predicates:
             - Path=/customer/**,/employee/**,/holder/**,/person/**,/signer/**,/company/**
         - id: product
-          uri: "lb://PRODUCT"
+          uri: lb://PRODUCT
           predicates:
             - Path=/card/**,/checking-account/**,/fixed-term/**,/loan/**,/product/**,/savings-account/**
         - id: movement
-          uri: "lb://MOVEMENT"
+          uri: lb://MOVEMENT
           predicates:
             - Path=/employees/**,/products/**,/movement/**
 logging:
