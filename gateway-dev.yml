@@ -9,9 +9,6 @@ eureka:
   instance:
     instanceId: ${random.uuid}
 spring:
-  loadbalancer:
-    ribbon:
-      enabled: false
   cloud:
     gateway:
       discovery:
