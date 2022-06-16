@@ -2,7 +2,7 @@ customer:
   property: Movement Profile Dev
 api:
   customer:
-    baseUri: http://customer/customer
+    baseUri: http://localhost:8083/customer
     personUri: http://localhost:8083/person
     companyUri: http://localhost:8083/company
     employeeUri: http://localhost:8083/employee
