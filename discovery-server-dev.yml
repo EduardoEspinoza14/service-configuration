@@ -1,0 +1,6 @@
+customer:
+  property: Discovery Server Profile Dev
+server:
+  port: 8083
+logging:
+  config: classpath:logback.xml
