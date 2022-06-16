@@ -1,6 +1,14 @@
 customer:
   property: Discovery Server Profile Dev
 server:
-  port: 8082
+  port: 8081
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 logging:
   config: classpath:logback.xml
