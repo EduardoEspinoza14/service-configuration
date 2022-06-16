@@ -8,6 +8,11 @@ eureka:
       defaultZone: http://localhost:8082/eureka/
   instance:
     instanceId: ${random.uuid}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 spring:
   loadbalancer:
     ribbon:
