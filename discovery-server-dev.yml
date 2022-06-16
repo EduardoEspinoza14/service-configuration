@@ -1,7 +1,7 @@
 customer:
   property: Discovery Server Profile Dev
 server:
-  port: 8081
+  port: 8082
 eureka:
   instance:
     hostname: localhost
