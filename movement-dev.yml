@@ -50,8 +50,8 @@ resilience4j:
   timelimiter:
     configs:
       shared:
-      timeout-duration: 2s
-      cancel-running-future: true
+        timeout-duration: 2s
+        cancel-running-future: true
     instances:
       example:
         base-config: shared
