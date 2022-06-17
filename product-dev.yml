@@ -23,7 +23,7 @@ management:
 spring:
   data:
     mongodb:
-      host: localhost
+      host: host.docker.internal
       port: 27017
       database: bootcamp_19
 logging:
