@@ -1,7 +1,7 @@
 product:
   property: Product Profile Dev
 server:
-  port: 0
+  port: 80
 eureka:
   client:
     service-url:
