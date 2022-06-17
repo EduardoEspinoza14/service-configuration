@@ -9,7 +9,7 @@ api:
     signerUri: http://localhost:8083/signer
     holderUri: http://localhost:8083/holder
   product:
-    baseUri: lb://PRODUCT/product
+    baseUri: http://localhost:8083/product
     savingsAccountUri: http://localhost:8083/savings-account
     checkingAccountUri: http://localhost:8083/checking-account
     fixedTermUri: http://localhost:8083/fixed-term
