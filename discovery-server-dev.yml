@@ -4,7 +4,6 @@ server:
   port: 8082
 eureka:
   instance:
-    hostname: localhost
     preferIpAddress: true
   client:
     registerWithEureka: false
