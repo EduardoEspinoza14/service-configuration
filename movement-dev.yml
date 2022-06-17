@@ -2,19 +2,19 @@ customer:
   property: Movement Profile Dev
 api:
   customer:
-    baseUri: http://localhost:8083/customer
-    personUri: http://localhost:8083/person
-    companyUri: http://localhost:8083/company
-    employeeUri: http://localhost:8083/employee
-    signerUri: http://localhost:8083/signer
-    holderUri: http://localhost:8083/holder
+    baseUri: http://customer/customer
+    personUri: http://customer/person
+    companyUri: http://customer/company
+    employeeUri: http://customer/employee
+    signerUri: http://customer/signer
+    holderUri: http://customer/holder
   product:
     baseUri: http://product/product
-    savingsAccountUri: http://localhost:8083/savings-account
-    checkingAccountUri: http://localhost:8083/checking-account
-    fixedTermUri: http://localhost:8083/fixed-term
-    cardUri: http://localhost:8083/card
-    loanUri: http://localhost:8083/loan
+    savingsAccountUri: http://product/savings-account
+    checkingAccountUri: http://product/checking-account
+    fixedTermUri: http://product/fixed-term
+    cardUri: http://product/card
+    loanUri: http://product/loan
 server:
   port: 0
 eureka:
