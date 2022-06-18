@@ -12,8 +12,8 @@ jobs:
   redeploy:
     name: Redeploy webhook call
     runs-on: ubuntu-18.04
-    needs: [ docker ]
     steps:
+      - uses: actions/checkout@v3
       - name: Deploy docker container webhook
         uses: joelwmale/webhook-action@master
         env:
