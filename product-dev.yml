@@ -8,7 +8,7 @@ eureka:
       defaultZone: http://172.17.0.3:8082/eureka/
   instance:
     instanceId: ${random.uuid}
-    hostname: host.docker.internal
+    preferIpAddress: true
 management:
   health:
     circuitbreakers:
