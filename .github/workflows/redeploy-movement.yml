@@ -1,0 +1,20 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Redeploy Movement Service
+on:
+  push:
+    paths:
+      - 'movement-dev.yml'
+  pull_request:
+    paths:
+      - 'movement-dev.yml'
+jobs:
+  redeploy:
+    name: Redeploy webhook call
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: Deploy docker container webhook
+        uses: joelwmale/webhook-action@master
+        env:
+          WEBHOOK_URL: ${{ secrets.DEPLOY_MOVEMENT_WEBHOOK_URL  }}
