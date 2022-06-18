@@ -4,7 +4,7 @@ server:
   port: 8082
 eureka:
   instance:
-    hostname: host.docker.internal
+    hostname: 172.17.0.2
   client:
     registerWithEureka: false
     fetchRegistry: false
