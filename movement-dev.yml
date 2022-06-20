@@ -20,7 +20,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8082/eureka/
+      defaultZone: http://172.17.0.3:8082/eureka/
   instance:
     instanceId: ${random.uuid}
 management:
@@ -38,7 +38,7 @@ management:
 spring:
   data:
     mongodb:
-      host: localhost
+      host: 172.17.0.6
       port: 27017
       database: bootcamp_19
   cloud:
