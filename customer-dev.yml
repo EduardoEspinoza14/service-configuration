@@ -1,13 +1,14 @@
 customer:
   property: Customer Profile Dev
 server:
-  port: 0
+  port: 8092
 eureka:
   client:
     service-url:
       defaultZone: http://172.17.0.3:8082/eureka/
   instance:
     instanceId: ${random.uuid}
+    preferIpAddress: true
 management:
   health:
     circuitbreakers:
