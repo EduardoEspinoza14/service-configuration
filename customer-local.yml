@@ -1,13 +1,13 @@
-product:
-  property: Product Profile Dev
+customer:
+  property: Customer Profile Localhost
 server:
-  port: 8091
+  port: 8092
 kafka:
   bootstrapAddress: localhost:29092
 eureka:
   client:
     service-url:
-      defaultZone: http://172.17.0.3:8082/eureka/
+      defaultZone: http://20.187.90.183:8082/eureka/
   instance:
     instanceId: ${random.uuid}
     preferIpAddress: true
@@ -26,7 +26,7 @@ management:
 spring:
   data:
     mongodb:
-      host: 172.17.0.6
+      host: localhost
       port: 27017
       database: bootcamp_19
 logging:

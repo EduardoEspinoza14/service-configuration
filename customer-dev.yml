@@ -2,6 +2,8 @@ customer:
   property: Customer Profile Dev
 server:
   port: 8092
+kafka:
+  bootstrapAddress: localhost:29092
 eureka:
   client:
     service-url:
