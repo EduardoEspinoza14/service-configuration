@@ -1,0 +1,36 @@
+customer:
+  property: Reporting Server Profile Dev
+server:
+  port: 8083
+kafka:
+  bootstrapAddress: http://localhost:29092
+  group-id: bootcamp19
+eureka:
+  client:
+    service-url:
+      defaultZone: http://172.17.0.3:8082/eureka/
+  instance:
+    instanceId: ${random.uuid}
+    preferIpAddress: true
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+  endpoint:
+    health:
+      show-details: always
+spring:
+  r2dbc:
+    h2:
+      url: file:C:/Users/eespinll/Documents/H2/bootcamp19;DB_CLOSE_DELAY=-1;
+  h2:
+    console:
+      enabled: true
+      port: 9000
+logging:
+  config: classpath:logback.xml
