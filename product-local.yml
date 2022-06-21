@@ -1,0 +1,31 @@
+product:
+  property: Product Profile Localhost
+server:
+  port: 8091
+eureka:
+  client:
+    service-url:
+      defaultZone: http://20.187.90.183:8082/eureka/
+  instance:
+    instanceId: ${random.uuid}
+    preferIpAddress: true
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+  endpoint:
+    health:
+      show-details: always
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: bootcamp_19
+logging:
+  config: classpath:logback.xml
