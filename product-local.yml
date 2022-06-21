@@ -2,6 +2,8 @@ product:
   property: Product Profile Localhost
 server:
   port: 8091
+kafka:
+  bootstrapAddress: localhost:29092
 eureka:
   client:
     service-url:
