@@ -32,5 +32,7 @@ spring:
     console:
       enabled: true
       port: 9001
+    settings:
+      webAllowOthers: true
 logging:
   config: classpath:logback.xml
