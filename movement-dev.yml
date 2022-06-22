@@ -42,7 +42,7 @@ spring:
   data:
     mongodb:
       host: 172.26.0.12
-      port: 27020
+      port: 27017
       database: bootcamp_19
   cloud:
     loadbalancer:

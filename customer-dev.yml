@@ -27,7 +27,7 @@ spring:
   data:
     mongodb:
       host: 172.26.0.11
-      port: 27019
+      port: 27017
       database: bootcamp_19
 logging:
   config: classpath:logback.xml
