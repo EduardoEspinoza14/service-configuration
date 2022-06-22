@@ -3,7 +3,7 @@ customer:
 server:
   port: 8083
 kafka:
-  bootstrapAddress: 172.26.0.3:9092
+  bootstrapAddress: 172.26.0.4:9092
   group-id: bootcamp19
 eureka:
   client:
