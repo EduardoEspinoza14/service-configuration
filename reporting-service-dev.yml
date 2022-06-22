@@ -3,12 +3,12 @@ customer:
 server:
   port: 8083
 kafka:
-  bootstrapAddress: 172.24.0.3:29092
+  bootstrapAddress: 172.26.0.3:9092
   group-id: bootcamp19
 eureka:
   client:
     service-url:
-      defaultZone: http://172.17.0.3:8082/eureka/
+      defaultZone: http://172.26.0.6:8082/eureka/
   instance:
     instanceId: ${random.uuid}
     preferIpAddress: true

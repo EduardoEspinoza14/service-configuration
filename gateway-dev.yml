@@ -5,7 +5,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://172.17.0.3:8082/eureka/
+      defaultZone: http://172.26.0.6:8082/eureka/
   instance:
     instanceId: ${random.uuid}
     preferIpAddress: true
