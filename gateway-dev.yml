@@ -40,5 +40,9 @@ spring:
           uri: lb://MOVEMENT
           predicates:
             - Path=/employees/**,/products/**,/movement/**
+        - id: h2_console
+          uri: ${rewrite.backend.uri:lb://REPORTING-SERVICE:9001}
+          predicates:
+            - Path=/h2-console/**
 logging:
   config: classpath:logback.xml
