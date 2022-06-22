@@ -1,5 +1,5 @@
 customer:
-  property: Reporting Server Profile Localhost
+  property: Reporting Service Profile Localhost
 server:
   port: 8083
 kafka:

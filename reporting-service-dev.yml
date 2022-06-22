@@ -1,5 +1,5 @@
 customer:
-  property: Reporting Server Profile Dev
+  property: Reporting Service Profile Dev
 server:
   port: 8083
 kafka:
