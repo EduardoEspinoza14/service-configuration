@@ -34,6 +34,8 @@ spring:
     console:
       enabled: true
       port: 9001
+      webAllowOthers: true
+      web-allow-others: true
       settings:
         webAllowOthers: true
         web-allow-others: true
