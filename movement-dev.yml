@@ -17,10 +17,12 @@ api:
     loanUri: http://product/loan
 server:
   port: 8093
+kafka:
+  bootstrapAddress: 172.26.0.4:29092
 eureka:
   client:
     service-url:
-      defaultZone: http://172.17.0.3:8082/eureka/
+      defaultZone: http://172.26.0.6:8082/eureka/
   instance:
     instanceId: ${random.uuid}
     preferIpAddress: true
@@ -39,8 +41,8 @@ management:
 spring:
   data:
     mongodb:
-      host: 172.17.0.6
-      port: 27017
+      host: 172.26.0.12
+      port: 27020
       database: bootcamp_19
   cloud:
     loadbalancer:
