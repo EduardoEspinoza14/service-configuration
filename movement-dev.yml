@@ -41,7 +41,7 @@ management:
 spring:
   data:
     mongodb:
-      host: 172.26.0.12
+      host: 172.26.0.14
       port: 27017
       database: bootcamp_19
   cloud:
