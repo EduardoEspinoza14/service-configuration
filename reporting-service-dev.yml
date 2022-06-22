@@ -21,6 +21,8 @@ management:
       exposure:
         include:
           - health
+          - info
+          - h2console
   endpoint:
     health:
       show-details: always
