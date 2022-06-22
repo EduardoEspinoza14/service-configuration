@@ -34,5 +34,6 @@ spring:
       port: 9001
       settings:
         webAllowOthers: true
+        web-allow-others: true
 logging:
   config: classpath:logback.xml
