@@ -31,11 +31,11 @@ spring:
     h2:
       url: file:/tmp/bootcamp19;DB_CLOSE_DELAY=-1;
   h2:
-    console.settings.trace: false
-    spring.h2.console.settings.web-allow-others: false
+    console.settings.trace: true
+    spring.h2.console.settings.web-allow-others: true
     console:
-      settings.trace: false
-      settings.web-allow-others: false
+      settings.trace: true
+      settings.web-allow-others: true
       enabled: true
       port: 8085
       webAllowOthers: true
