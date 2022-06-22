@@ -3,11 +3,11 @@ customer:
 server:
   port: 8092
 kafka:
-  bootstrapAddress: localhost:29092
+  bootstrapAddress: 172.26.0.4:29092
 eureka:
   client:
     service-url:
-      defaultZone: http://172.17.0.3:8082/eureka/
+      defaultZone: http://172.26.0.6:8082/eureka/
   instance:
     instanceId: ${random.uuid}
     preferIpAddress: true
@@ -26,8 +26,8 @@ management:
 spring:
   data:
     mongodb:
-      host: 172.17.0.6
-      port: 27017
+      host: 172.26.0.11
+      port: 27019
       database: bootcamp_19
 logging:
   config: classpath:logback.xml
