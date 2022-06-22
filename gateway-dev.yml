@@ -44,5 +44,9 @@ spring:
           uri: ${rewrite.backend.uri:http://172.26.0.8:9001}
           predicates:
             - Path=/h2-console/**
+        - id: h2_console2
+          uri: ${rewrite.backend.uri:http://172.26.0.8:9001/actuator}
+          predicates:
+            - Path=/h2console/**
 logging:
   config: classpath:logback.xml
