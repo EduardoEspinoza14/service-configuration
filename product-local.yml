@@ -4,6 +4,8 @@ server:
   port: 8091
 kafka:
   bootstrapAddress: localhost:29092
+cache:
+  enabled: true
 eureka:
   client:
     service-url:
