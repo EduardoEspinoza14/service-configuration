@@ -33,6 +33,6 @@ spring:
       database: bootcamp_19
   redis:
     host: localhost
-    port: 16379
+    port: 6379
 logging:
   config: classpath:logback.xml
