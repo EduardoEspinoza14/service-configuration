@@ -39,7 +39,11 @@ spring:
         - id: movement
           uri: lb://MOVEMENT
           predicates:
-            - Path=/employees/**,/products/**,/movement/**
+            - Path=/movement/**
+        - id: business-service-one
+          uri: lb://BUSINESS-SERVICE-ONE
+          predicates:
+            - Path=/employees/**,/products/**,/movements/**
         - id: h2_console
           uri: ${rewrite.backend.uri:http://172.26.0.8:9001}
           predicates:
