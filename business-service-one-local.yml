@@ -1,0 +1,47 @@
+customer:
+  property: Business Service One Profile Dev
+api:
+  customer:
+    baseUri: http://customer/customer
+    personUri: http://customer/person
+    companyUri: http://customer/company
+    employeeUri: http://customer/employee
+    signerUri: http://customer/signer
+    holderUri: http://customer/holder
+  product:
+    baseUri: http://product/product
+    savingsAccountUri: http://product/savings-account
+    checkingAccountUri: http://product/checking-account
+    fixedTermUri: http://product/fixed-term
+    cardUri: http://product/card
+    loanUri: http://product/loan
+  movement:
+    baseUri: http://movement/movement
+server:
+  port: 8093
+eureka:
+  client:
+    service-url:
+      defaultZone: http://20.187.90.183:8082/eureka/
+  instance:
+    instanceId: ${random.uuid}
+    preferIpAddress: true
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+  endpoint:
+    health:
+      show-details: always
+spring:
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+logging:
+  config: classpath:logback.xml
