@@ -19,6 +19,8 @@ server:
   port: 8093
 kafka:
   bootstrapAddress: 172.26.0.4:29092
+cache:
+  enabled: true
 eureka:
   client:
     service-url:
@@ -44,9 +46,8 @@ spring:
       host: 172.26.0.14
       port: 27017
       database: bootcamp_19
-  cloud:
-    loadbalancer:
-      ribbon:
-        enabled: false
+  redis:
+    host: 172.26.0.8
+    port: 6379
 logging:
   config: classpath:logback.xml
