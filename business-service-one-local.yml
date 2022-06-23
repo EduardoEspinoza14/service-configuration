@@ -18,7 +18,7 @@ api:
   movement:
     baseUri: http://movement/movement
 server:
-  port: 8093
+  port: 8094
 eureka:
   client:
     service-url:

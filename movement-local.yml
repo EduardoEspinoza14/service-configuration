@@ -1,20 +1,5 @@
 customer:
   property: Movement Profile Localhost
-api:
-  customer:
-    baseUri: http://customer/customer
-    personUri: http://customer/person
-    companyUri: http://customer/company
-    employeeUri: http://customer/employee
-    signerUri: http://customer/signer
-    holderUri: http://customer/holder
-  product:
-    baseUri: http://product/product
-    savingsAccountUri: http://product/savings-account
-    checkingAccountUri: http://product/checking-account
-    fixedTermUri: http://product/fixed-term
-    cardUri: http://product/card
-    loanUri: http://product/loan
 server:
   port: 8093
 kafka:
