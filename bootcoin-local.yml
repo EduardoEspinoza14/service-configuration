@@ -22,6 +22,8 @@ server:
 kafka:
   bootstrapAddress: http://localhost:29092
   group-id: bootcamp19
+cache:
+  enabled: true
 eureka:
   client:
     service-url:
