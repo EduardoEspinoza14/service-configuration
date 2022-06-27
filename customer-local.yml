@@ -9,7 +9,7 @@ cache:
 eureka:
   client:
     service-url:
-      defaultZone: http://20.187.90.183:8082/eureka/
+      defaultZone: http://localhost:8082/eureka/
   instance:
     instanceId: ${random.uuid}
     preferIpAddress: true
