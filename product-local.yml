@@ -4,6 +4,7 @@ server:
   port: 8091
 kafka:
   bootstrapAddress: localhost:29092
+  group-id: bootcamp19
 cache:
   enabled: true
 eureka:
