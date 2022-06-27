@@ -40,3 +40,12 @@ management:
   endpoint:
     health:
       show-details: always
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: bootcamp_19
+  redis:
+    host: localhost
+    port: 6379
