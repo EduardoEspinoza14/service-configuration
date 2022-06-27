@@ -1,0 +1,52 @@
+customer:
+  property: Gateway Profile Dev
+server:
+  port: 80
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8082/eureka/
+  instance:
+    instanceId: ${random.uuid}
+    preferIpAddress: true
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+  endpoint:
+    health:
+      show-details: always
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: customer
+          uri: lb://CUSTOMER
+          predicates:
+            - Path=/customer/**,/employee/**,/holder/**,/person/**,/signer/**,/company/**
+        - id: product
+          uri: lb://PRODUCT
+          predicates:
+            - Path=/card/**,/checking-account/**,/fixed-term/**,/loan/**,/product/**,/savings-account/**
+        - id: movement
+          uri: lb://MOVEMENT
+          predicates:
+            - Path=/movement/**
+        - id: business-service-one
+          uri: lb://BUSINESS-SERVICE-ONE
+          predicates:
+            - Path=/employees/**,/products/**,/movements/**
+        - id: h2_console
+          uri: ${rewrite.backend.uri:http://localhost:9001}
+          predicates:
+            - Path=/h2-console/**
+logging:
+  config: classpath:logback.xml
