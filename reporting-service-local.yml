@@ -29,7 +29,7 @@ spring:
       url: file:C:/Users/eespinll/Documents/H2/bootcamp19;DB_CLOSE_DELAY=-1;
   h2:
     console:
-      enabled: false
+      enabled: true
       port: 9000
 logging:
   config: classpath:logback.xml
