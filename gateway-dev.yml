@@ -44,6 +44,10 @@ spring:
           uri: lb://BUSINESS-SERVICE-ONE
           predicates:
             - Path=/employees/**,/products/**,/movements/**
+        - id: bootcoin
+          uri: lb://BOOTCOIN
+          predicates:
+            - Path=/bootcoin/**,/exchange/**
         - id: h2_console
           uri: ${rewrite.backend.uri:http://172.26.0.8:9001}
           predicates:

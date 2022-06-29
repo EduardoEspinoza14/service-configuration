@@ -46,7 +46,7 @@ spring:
         - id: bootcoin
           uri: lb://BOOTCOIN
           predicates:
-            - Path=/bootcoin/**
+            - Path=/bootcoin/**,/exchange/**
         - id: h2_console
           uri: ${rewrite.backend.uri:http://localhost:9001}
           predicates:
